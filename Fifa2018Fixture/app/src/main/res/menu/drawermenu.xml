@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="none">
+
+
+        <item android:id="@+id/home" android:title="Groups"
+           />
+
+    </group>
+
+
+    <group
+        android:id="@+id/menu_middle"
+        android:checkableBehavior="none">
+
+
+        <item android:id="@+id/profile" android:title="Matches"
+            />
+
+    </group>
+
+
+
+    <group
+        android:id="@+id/menu_middle2"
+        android:checkableBehavior="none">
+
+
+        <item android:id="@+id/change_password" android:title="Results"
+           />
+
+    </group>
+
+
+
+
+
+
+</menu>

@@ -45,6 +45,7 @@ public class RecyclerAdapterMatch extends RecyclerView.Adapter<RecyclerAdapterMa
         holder.tvTeam1.setText(matches.get(position).getTeam1());
         holder.tvTeam2.setText(matches.get(position).getTeam2());
         holder.tvVenue.setText(matches.get(position).getVenue());
+        holder.tvMatchNo.setText(""+(position+1));
 
         Picasso.with(context).load(BaseUrl.BASE_URL_APP+"group/Image/"+
                 matches.get(position).getImg1()+".png").into(holder.ivTeam1);
@@ -63,7 +64,7 @@ public class RecyclerAdapterMatch extends RecyclerView.Adapter<RecyclerAdapterMa
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         ItemClickListener itemClickListener;
-        TextView tvDate, tvTeam1, tvTeam2, tvVenue;
+        TextView tvDate, tvTeam1, tvTeam2, tvVenue, tvMatchNo;
         ImageView ivTeam1, ivTeam2;
 
         public MyViewHolder(View itemView) {
@@ -73,6 +74,8 @@ public class RecyclerAdapterMatch extends RecyclerView.Adapter<RecyclerAdapterMa
             tvTeam1 = itemView.findViewById(R.id.textview_team1_match);
             tvTeam2 = itemView.findViewById(R.id.textview_team2_match);
             tvVenue = itemView.findViewById(R.id.textview_venue);
+
+            tvMatchNo = itemView.findViewById(R.id.textview_match_no);
 
             ivTeam1 = itemView.findViewById(R.id.imageview_team1_match);
             ivTeam2 = itemView.findViewById(R.id.imageview_team2_match);

@@ -61,7 +61,7 @@
                         android:layout_height="wrap_content"
                         android:text="Team 1"
                         android:layout_gravity="center"
-                        android:textSize="17dp"
+                        android:textSize="25dp"
                         android:textColor="@color/colorTitle"
 
                         />
@@ -69,8 +69,8 @@
 
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imageview_team1_result"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:src="@mipmap/ic_launcher" />
 
@@ -81,7 +81,7 @@
                         android:layout_height="wrap_content"
                         android:text="0"
                         android:layout_gravity="center"
-                        android:textSize="25dp"
+                        android:textSize="35dp"
                         android:textColor="@color/colorText"
 
                         />
@@ -117,7 +117,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Team 2"
-                        android:textSize="17dp"
+                        android:textSize="25dp"
                         android:textColor="@color/colorTitle"
 
 
@@ -126,8 +126,8 @@
 
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imageview_team2_result"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:src="@mipmap/ic_launcher"
                         />
@@ -139,7 +139,7 @@
                         android:layout_height="wrap_content"
                         android:text="0"
                         android:layout_gravity="center"
-                        android:textSize="25dp"
+                        android:textSize="35dp"
                         android:textColor="@color/colorText"
 
                         />
@@ -160,7 +160,7 @@
                 android:layout_marginRight="10dp"
                 android:text="status"
                 android:layout_marginTop="10dp"
-                android:textSize="15dp"
+                android:textSize="18dp"
                 android:textColor="@color/colorDetails"
                 android:layout_gravity="center"
                 />

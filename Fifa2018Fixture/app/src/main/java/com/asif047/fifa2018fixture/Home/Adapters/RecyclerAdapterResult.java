@@ -43,6 +43,7 @@ public class RecyclerAdapterResult extends RecyclerView.Adapter<RecyclerAdapterR
         holder.tvScore1.setText(results.get(position).getScore1());
         holder.tvScore2.setText(results.get(position).getScore2());
         holder.tvStatus.setText(results.get(position).getStatus());
+        holder.tvMatchNo.setText(""+(position+1));
 
         Picasso.with(context).load(BaseUrl.BASE_URL_APP+"group/Image/"+
                 results.get(position).getImg1()+".png").into(holder.ivTeam1);
@@ -61,7 +62,7 @@ public class RecyclerAdapterResult extends RecyclerView.Adapter<RecyclerAdapterR
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         ItemClickListener itemClickListener;
-        TextView tvTeam1, tvTeam2, tvScore1, tvScore2, tvStatus;
+        TextView tvTeam1, tvTeam2, tvScore1, tvScore2, tvStatus, tvMatchNo;
         ImageView ivTeam1, ivTeam2;
 
         public MyViewHolder(View itemView) {
@@ -72,6 +73,7 @@ public class RecyclerAdapterResult extends RecyclerView.Adapter<RecyclerAdapterR
             tvScore1 = itemView.findViewById(R.id.textview_score1_result);
             tvScore2 = itemView.findViewById(R.id.textview_score2_result);
             tvStatus = itemView.findViewById(R.id.textview_status);
+            tvMatchNo = itemView.findViewById(R.id.match_no_result);
 
             ivTeam1 = itemView.findViewById(R.id.imageview_team1_result);
             ivTeam2 = itemView.findViewById(R.id.imageview_team2_result);

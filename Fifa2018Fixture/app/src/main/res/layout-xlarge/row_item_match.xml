@@ -14,7 +14,7 @@
         card_view:cardElevation="10dp"
         card_view:cardUseCompatPadding="true"
 
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="10dp"
 
         >
 
@@ -26,23 +26,56 @@
             >
 
 
-            <TextView
-                android:id="@+id/match_no_result"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=""
-                android:textSize="18dp"
-                android:textColor="#000000"
-                android:textStyle="bold"
-                android:layout_gravity="right"
-                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/textview_date_match"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thu June 14 (Group A)"
+
+                    android:textSize="35dp"
+                    android:textColor="@color/colorTitle"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="4"
+                    />
+
+
+                <TextView
+                    android:id="@+id/textview_match_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
                 />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:gravity="center"
                 >
 
@@ -52,40 +85,26 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     >
-
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageview_team1_match"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/ic_launcher"
+                        />
 
 
                     <TextView
-                        android:id="@+id/textview_team1_result"
+                        android:id="@+id/textview_team1_match"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Team 1"
+                        android:textSize="30dp"
+
                         android:layout_gravity="center"
-                        android:textSize="17dp"
-                        android:textColor="@color/colorTitle"
-
-                        />
-
-
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/imageview_team1_result"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_gravity="center"
-                        android:src="@mipmap/ic_launcher" />
-
-
-                    <TextView
-                        android:id="@+id/textview_score1_result"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="0"
-                        android:layout_gravity="center"
-                        android:textSize="25dp"
                         android:textColor="@color/colorText"
 
                         />
-
 
 
                 </LinearLayout>
@@ -110,41 +129,26 @@
                     android:layout_marginLeft="20dp"
                     >
 
-
-                    <TextView
-                        android:id="@+id/textview_team2_result"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="Team 2"
-                        android:textSize="17dp"
-                        android:textColor="@color/colorTitle"
-
-
-                        />
-
-
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/imageview_team2_result"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:id="@+id/imageview_team2_match"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
                         android:src="@mipmap/ic_launcher"
                         />
 
-
                     <TextView
-                        android:id="@+id/textview_score2_result"
+                        android:id="@+id/textview_team2_match"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0"
+                        android:text="Team 2"
+                        android:textSize="30dp"
+
                         android:layout_gravity="center"
-                        android:textSize="25dp"
                         android:textColor="@color/colorText"
 
+
                         />
-
-
 
                 </LinearLayout>
 
@@ -152,15 +156,12 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/textview_status"
+                android:id="@+id/textview_venue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:text="status"
+                android:text="Venue"
                 android:layout_marginTop="10dp"
-                android:textSize="15dp"
+                android:textSize="25dp"
                 android:textColor="@color/colorDetails"
                 android:layout_gravity="center"
                 />
@@ -170,6 +171,5 @@
         </LinearLayout>
 
     </android.support.v7.widget.CardView>
-
 
 </android.support.constraint.ConstraintLayout>
